@@ -187,6 +187,19 @@
             : discard the changes from top of stash stack.
           </li>
         </ul>
+        <h3>Typical Workflow for branching and committing for PRs</h3>
+        <ol>
+          <li>git status to check branch and if there's uncommitted files</li>
+          <li>git checkout -b [branch-name] to create a new branch</li>
+          <li>git pull origin main to make sure you're editing on the most recent version of the files from the main branch.</li>
+          <li>git add -A to add all files that were changed to be committed</li>
+          <li>git commit -m "message about your updated code"</li>
+          <li>git push origin [branch you've been editing on] to push the changes up to github on the branch.</li>
+          <li>Go to github and create a PR</li>
+          <li>Tag people you want to review the changes or merge it yourself if it's a solo project and you've verified everything works</li>
+          <li>git checkout main to swap back to the main version of your newly updated code</li>
+          <li>git pull origin main to pull the merged changes to main down from github.</li>
+        </ol>
       </section>
       
 
